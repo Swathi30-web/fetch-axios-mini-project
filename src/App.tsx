@@ -8,6 +8,7 @@ import Users from "./pages/Users";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Todos from "./pages/Todos";
+import Images from "./pages/Images";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                <Route path="/posts" element={<Posts />} />
                <Route path="/todos" element={<Todos />} />
           <Route path="/contacts" element={<Contacts />} />
+            <Route path="/images" element={<Images />} />
 
         </Routes>
       </div>

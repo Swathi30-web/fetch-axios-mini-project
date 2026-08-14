@@ -22,7 +22,7 @@
       "name": "swathi",
       "phone": "9123456783",
       "role": "full stack",
-      "id": "6Xl44EefsDs"
+      "id": "sBDDQXR7xnQ"
     }
   ],
   "users": [
@@ -169,6 +169,28 @@
       "id": "6",
       "task": "Submit mini project",
       "done": false
+    }
+  ],
+  "images": [
+    {
+      "id": "1",
+      "title": "Mountain View",
+      "url": "https://picsum.photos/seed/mountain/400/300"
+    },
+    {
+      "id": "2",
+      "title": "City Lights",
+      "url": "https://picsum.photos/seed/city/400/300"
+    },
+    {
+      "id": "3",
+      "title": "Ocean Waves",
+      "url": "https://picsum.photos/seed/ocean/400/300"
+    },
+    {
+      "title": "img",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36p0x5y3iTREEG8OdxER4Wr8uuzu_wmg8KsaLP8xADbfnavhbMDkJ5b_m&s=10",
+      "id": "EsO6X66Ud9o"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

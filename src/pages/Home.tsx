@@ -36,6 +36,13 @@ const cards = [
     tag: 'GET / POST / PUT / DELETE',
     desc: 'Full CRUD — add, edit, delete contacts.',
   },
+  {
+  to: '/Images',
+  icon: '🖼️',
+  title: 'Images',
+  tag: 'GET / POST',
+  desc: 'Fetch images and add new images.',
+},
 ]
 
 export default function Home() {
