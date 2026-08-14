@@ -1,0 +1,169 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Sudar",
+      "phone": "9123456780",
+      "role": "UI Designer"
+    },
+    {
+      "id": "2",
+      "name": "Subashini",
+      "phone": "9123456781",
+      "role": "Backend Developer"
+    },
+    {
+      "id": "3",
+      "name": "Vasuki",
+      "phone": "9123456782",
+      "role": "Project Manager"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Arun Kumar",
+      "email": "arun@example.com",
+      "phone": "9876543210",
+      "city": "Chennai"
+    },
+    {
+      "id": "2",
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "phone": "9876543211",
+      "city": "Bengaluru"
+    },
+    {
+      "id": "3",
+      "name": "Vikram Singh",
+      "email": "vikram@example.com",
+      "phone": "9876543212",
+      "city": "Mumbai"
+    },
+    {
+      "id": "4",
+      "name": "Sneha Reddy",
+      "email": "sneha@example.com",
+      "phone": "9876543213",
+      "city": "Hyderabad"
+    },
+    {
+      "id": "5",
+      "name": "Karthik Raja",
+      "email": "karthik@example.com",
+      "phone": "9876543214",
+      "city": "Coimbatore"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Mouse",
+      "price": 599,
+      "category": "Electronics",
+      "image": "https://picsum.photos/seed/mouse/500/300",
+      "description": "Ergonomic wireless mouse with USB receiver."
+    },
+    {
+      "id": "2",
+      "name": "Bluetooth Headphones",
+      "price": 1999,
+      "category": "Electronics",
+      "image": "https://picsum.photos/seed/headphones/500/300",
+      "description": "Over-ear Bluetooth headphones with noise isolation."
+    },
+    {
+      "id": "3",
+      "name": "Cotton T-Shirt",
+      "price": 449,
+      "category": "Clothing",
+      "image": "https://picsum.photos/seed/tshirt/500/300",
+      "description": "Soft, breathable 100% cotton round-neck t-shirt."
+    },
+    {
+      "id": "4",
+      "name": "Yoga Mat",
+      "price": 899,
+      "category": "Fitness",
+      "image": "https://picsum.photos/seed/yogamat/500/300",
+      "description": "Non-slip yoga mat, 6mm thick, with carry strap."
+    },
+    {
+      "id": "5",
+      "name": "Steel Water Bottle",
+      "price": 349,
+      "category": "Home",
+      "image": "https://picsum.photos/seed/bottle/500/300",
+      "description": "Insulated stainless steel bottle, keeps water cold 24h."
+    },
+    {
+      "id": "6",
+      "name": "Desk Lamp",
+      "price": 799,
+      "category": "Home",
+      "image": "https://picsum.photos/seed/lamp/500/300",
+      "description": "Adjustable LED desk lamp with 3 brightness modes."
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Getting Started with React",
+      "body": "React is a JavaScript library for building user interfaces using reusable components."
+    },
+    {
+      "id": "2",
+      "title": "Understanding TypeScript",
+      "body": "TypeScript adds static types to JavaScript, catching errors before runtime."
+    },
+    {
+      "id": "3",
+      "title": "Why Use Axios",
+      "body": "Axios is a promise-based HTTP client that simplifies making API requests."
+    },
+    {
+      "id": "4",
+      "title": "What is json-server",
+      "body": "json-server lets you spin up a fake REST API from a simple JSON file in seconds."
+    },
+    {
+      "id": "5",
+      "title": "React Router Basics",
+      "body": "React Router enables client-side navigation between pages without a full reload."
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "task": "Learn React basics",
+      "done": true
+    },
+    {
+      "id": "2",
+      "task": "Practice TypeScript types",
+      "done": true
+    },
+    {
+      "id": "3",
+      "task": "Build API project with Axios",
+      "done": false
+    },
+    {
+      "id": "4",
+      "task": "Set up json-server",
+      "done": false
+    },
+    {
+      "id": "5",
+      "task": "Add React Router navigation",
+      "done": false
+    },
+    {
+      "id": "6",
+      "task": "Submit mini project",
+      "done": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
