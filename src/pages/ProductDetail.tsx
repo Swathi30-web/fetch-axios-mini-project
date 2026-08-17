@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link, useParams } from 'react-router-dom'
-import api from "../services/api";
+import api from '../services/api'
 import type { Product } from '../types/Employee'
-
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>()
+
   const [product, setProduct] = useState<Product | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -14,12 +14,15 @@ export default function ProductDetail() {
   const fetchProduct = async () => {
     setLoading(true)
     setError('')
+
     try {
       const res = await api.get<Product>(`/products/${id}`)
       setProduct(res.data)
     } catch (err) {
       setError(
-        axios.isAxiosError(err) ? err.message : 'Failed to load product.'
+        axios.isAxiosError(err)
+          ? err.message
+          : 'Failed to load product.'
       )
     } finally {
       setLoading(false)
@@ -37,15 +40,31 @@ export default function ProductDetail() {
         ← Back to Products
       </Link>
 
-     
+      {loading && <p>Loading product...</p>}
+
+      {!loading && error && <p>{error}</p>}
+
       {!loading && !error && product && (
         <div className="product-detail">
-          <img src={product.image} alt={product.name} />
+          <img
+            src={product.image}
+            alt={product.name}
+          />
+
           <div className="product-detail-info">
-            <span className="category">{product.category}</span>
+            <span className="category">
+              {product.category}
+            </span>
+
             <h2>{product.name}</h2>
-            <p className="price">₹{product.price}</p>
-            <p className="desc">{product.description}</p>
+
+            <p className="price">
+              ₹{product.price}
+            </p>
+
+            <p className="desc">
+              {product.description}
+            </p>
           </div>
         </div>
       )}
