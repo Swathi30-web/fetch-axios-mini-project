@@ -18,12 +18,14 @@ const getDB = () => {
   return JSON.parse(fs.readFileSync(dbPath, "utf-8"));
 };
 
+// Home
 app.get("/", (req, res) => {
   res.json({
     message: "Fetch Axios API is running",
   });
 });
 
+// Get all resources
 app.get("/:resource", (req, res) => {
   const db = getDB();
   const resource = req.params.resource;
@@ -35,6 +37,32 @@ app.get("/:resource", (req, res) => {
   }
 
   res.json(db[resource]);
+});
+
+// Get single item
+app.get("/:resource/:id", (req, res) => {
+  const db = getDB();
+
+  const resource = req.params.resource;
+  const id = req.params.id;
+
+  if (!db[resource]) {
+    return res.status(404).json({
+      message: `Resource '${resource}' not found`,
+    });
+  }
+
+  const item = db[resource].find(
+    (item) => String(item.id) === String(id)
+  );
+
+  if (!item) {
+    return res.status(404).json({
+      message: `${resource} with id ${id} not found`,
+    });
+  }
+
+  res.json(item);
 });
 
 const PORT = process.env.PORT || 3000;
